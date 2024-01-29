@@ -5,6 +5,8 @@ import useScreenSize from '../hooks/useScreenSize';
 const Navigation = () => {
   const screenSize = useScreenSize();
 
+  console.log(screenSize);
+
   if (screenSize.width <= 992) {
     // Small
     return (
@@ -28,7 +30,7 @@ const Navigation = () => {
     // } else if (screenSize.width <= 992) {
     //   // Large
     //   return <div className='nav-bar container'>Large</div>;
-  } else if (screenSize.width <= 1200) {
+  } else if (screenSize.width <= 1240) {
     // Extra Large
     return (
       <>
