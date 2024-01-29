@@ -1,4 +1,4 @@
-import { FaBars, FaSearch } from 'react-icons/fa';
+import { FaBars, FaSearch, FaChevronCircleDown } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 import useScreenSize from '../hooks/useScreenSize';
 
@@ -49,15 +49,11 @@ const Navigation = () => {
               Markets
             </a>
             <a className='nav-link' href='#'>
-              More
+              More <FaChevronCircleDown />
             </a>
           </div>
 
           <div className='nav-sign-up-in'>
-            <FaSearch
-              className='nav-search'
-              onClick={() => console.log('SEARCH')}
-            />
             <a href='#' className='btn btn-dark'>
               Sign Up
             </a>
@@ -100,13 +96,14 @@ const Navigation = () => {
             <a className='nav-link' href='#'>
               Entertainment
             </a>
-          </div>
 
-          <div className='nav-sign-up-in'>
             <FaSearch
               className='nav-search'
               onClick={() => console.log('SEARCH')}
             />
+          </div>
+
+          <div className='nav-sign-up-in'>
             <a href='#' className='btn btn-dark'>
               Sign Up
             </a>
