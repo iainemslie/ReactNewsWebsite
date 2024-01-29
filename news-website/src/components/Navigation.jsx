@@ -5,10 +5,10 @@ import useScreenSize from '../hooks/useScreenSize';
 const Navigation = () => {
   const screenSize = useScreenSize();
 
-  if (screenSize.width <= 576) {
+  if (screenSize.width <= 992) {
     // Small
     return (
-      <div className='nav-bar container'>
+      <div className='nav-bar'>
         <FaBars
           className='nav-burger'
           onClick={() => {
@@ -22,15 +22,52 @@ const Navigation = () => {
         />
       </div>
     );
-  } else if (screenSize.width <= 768) {
-    // Medium
-    return <div className='nav-bar container'>Medium</div>;
-  } else if (screenSize.width <= 992) {
-    // Large
-    return <div className='nav-bar container'>Large</div>;
+    // } else if (screenSize.width <= 768) {
+    //   // Medium
+    //   return <div className='nav-bar container'>Medium</div>;
+    // } else if (screenSize.width <= 992) {
+    //   // Large
+    //   return <div className='nav-bar container'>Large</div>;
   } else if (screenSize.width <= 1200) {
     // Extra Large
-    return <div className='nav-bar container'>Extra Large</div>;
+    return (
+      <>
+        <div className='nav-bar container'>
+          <img className='nav-logo' src={logo} alt='FNN News' />
+
+          <div className='nav-links'>
+            <a className='nav-link' href='#'>
+              US
+            </a>
+            <a className='nav-link' href='#'>
+              World
+            </a>
+            <a className='nav-link' href='#'>
+              Business
+            </a>
+            <a className='nav-link' href='#'>
+              Markets
+            </a>
+            <a className='nav-link' href='#'>
+              More
+            </a>
+          </div>
+
+          <div className='nav-sign-up-in'>
+            <FaSearch
+              className='nav-search'
+              onClick={() => console.log('SEARCH')}
+            />
+            <a href='#' className='btn btn-dark'>
+              Sign Up
+            </a>
+            <a href='#' className='btn btn-outline-dark'>
+              Sign In
+            </a>
+          </div>
+        </div>
+      </>
+    );
   } else {
     // Extra Extra Large
     return (
@@ -73,7 +110,7 @@ const Navigation = () => {
             <a href='#' className='btn btn-dark'>
               Sign Up
             </a>
-            <a href='#' className='btn btn-light'>
+            <a href='#' className='btn btn-outline-dark'>
               Sign In
             </a>
           </div>
