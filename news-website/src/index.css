@@ -110,6 +110,7 @@
 }
 
 .main-card .card-title {
+  font-size: 1.2rem;
   font-weight: 400;
   text-align: left;
 }
@@ -121,13 +122,14 @@
 }
 
 .main-card .card-category {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
   text-align: left;
   padding-top: 0.5rem;
 }
 
 .main-card .card-description {
+  font-size: 0.8rem;
   font-weight: 300;
   text-align: left;
   padding-top: 0.5rem;

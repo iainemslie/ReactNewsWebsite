@@ -8,7 +8,9 @@ const MainCard = () => {
         alt='two ladies laughing'
       />
       <h4 className='card-category'>Entertainment</h4>
-      <h2 className='card-title'>Top 10 Tips for Day Drinking The Right Way</h2>
+      <h2 className='card-title'>
+        Top 10 Tips for Day Drinking The Right Way This Summer
+      </h2>
       <h5 className='card-author'>Sally Struthers | 2024-01-29</h5>
       <p className='card-description'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam

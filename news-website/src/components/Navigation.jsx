@@ -24,12 +24,6 @@ const Navigation = () => {
         />
       </div>
     );
-    // } else if (screenSize.width <= 768) {
-    //   // Medium
-    //   return <div className='nav-bar container'>Medium</div>;
-    // } else if (screenSize.width <= 992) {
-    //   // Large
-    //   return <div className='nav-bar container'>Large</div>;
   } else if (screenSize.width <= 1240) {
     // Extra Large
     return (
@@ -117,44 +111,6 @@ const Navigation = () => {
       </>
     );
   }
-
-  // return (
-  //   <div className='nav-bar'>
-  //     {screenSize.width < 576 ? <>Mobile</> : <>Large</>}
-
-  //     {/*
-  //     <FaBars className='nav-menu' />
-  //     <img className='nav-logo' src={logo} alt='FNN News' /> */}
-
-  // <div className='nav-links'>
-  //   <a className='nav-link' href='#'>
-  //     US
-  //   </a>
-  //   <a className='nav-link' href='#'>
-  //     World
-  //   </a>
-  //   <a className='nav-link' href='#'>
-  //     Business
-  //   </a>
-  //   <a className='nav-link' href='#'>
-  //     Markets
-  //   </a>
-  //   <a className='nav-link' href='#'>
-  //     Tech
-  //   </a>
-  //   <a className='nav-link' href='#'>
-  //     Opinion
-  //   </a>
-  //   <a className='nav-link' href='#'>
-  //     Health
-  //   </a>
-  //   <a className='nav-link' href='#'>
-  //     Entertainment
-  //   </a>
-  // </div>
-
-  //   </div>
-  // );
 };
 
 export default Navigation;
