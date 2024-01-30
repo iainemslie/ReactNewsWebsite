@@ -27,19 +27,63 @@ const Hero = ({ screenSize, articles }) => {
         </div>
       </div>
     );
-  } else if (screenSize.width <= 1240) {
+  } else if (screenSize.width <= 1200) {
     // Large
     return (
       <div className='container'>
         <div className='hero'>
+          <div className='hero-left'>
+            <SimpleCard />
+            <SimpleCard />
+            <SimpleCard />
+            <SimpleCard />
+          </div>
           <div className='hero-middle'>
             <LargeImageCard />
           </div>
+          {/* <div className='hero-right'>
+            <SmallImageCard />
+            <SmallImageCard />
+          </div> */}
+        </div>
+      </div>
+    );
+  } else if (screenSize.width <= 1450) {
+    return (
+      <div className='container'>
+        <div className='hero'>
           <div className='hero-left'>
             <SmallImageCard />
             <SmallImageCard />
+          </div>
+          <div className='hero-middle'>
+            <LargeImageCard />
+          </div>
+          <div className='hero-right'>
+            <SimpleCard />
+            <SimpleCard />
+            <SimpleCard />
+            <SimpleCard />
+          </div>
+        </div>
+      </div>
+    );
+  } else if (screenSize.width <= 1800) {
+    return (
+      <div className='container'>
+        <div className='hero'>
+          <div className='hero-left'>
             <SmallImageCard />
             <SmallImageCard />
+          </div>
+          <div className='hero-middle'>
+            <LargeImageCard />
+          </div>
+          <div className='hero-right'>
+            <SimpleCard />
+            <SimpleCard />
+            <SimpleCard />
+            <SimpleCard />
           </div>
         </div>
       </div>

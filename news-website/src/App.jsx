@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const screenSize = useScreenSize();
+  console.log(screenSize);
 
   const [articles, setArticles] = useState([]);
 
