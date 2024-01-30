@@ -1,11 +1,63 @@
+import { useState } from 'react';
 import { FaBars, FaSearch, FaChevronCircleDown } from 'react-icons/fa';
+import { FaX } from 'react-icons/fa6';
 import logo from '../assets/logo.png';
 import useScreenSize from '../hooks/useScreenSize';
 
 const Navigation = () => {
   const screenSize = useScreenSize();
 
-  console.log(screenSize);
+  const [overlayMenu, setOverlayMenu] = useState(false);
+
+  if (overlayMenu) {
+    return (
+      <>
+        <div className='overlay-menu'>
+          <div className='nav-bar overlay-nav-bar'>
+            <FaX
+              className='nav-burger'
+              onClick={() => {
+                setOverlayMenu(!overlayMenu);
+                console.log('BURGER', overlayMenu);
+              }}
+            />
+            <img className='nav-logo' src={logo} alt='FNN News' />
+            <FaSearch
+              className='nav-search'
+              onClick={() => console.log('SEARCH')}
+            />
+          </div>
+          <div className='overlay-links'>
+            <a className='overlay-link' href='#'>
+              US
+            </a>
+            <a className='overlay-link' href='#'>
+              World
+            </a>
+            <a className='overlay-link' href='#'>
+              Business
+            </a>
+            <a className='overlay-link' href='#'>
+              Markets
+            </a>
+            <a className='overlay-link' href='#'>
+              Tech
+            </a>
+            <a className='overlay-link' href='#'>
+              Opinion
+            </a>
+            <a className='overlay-link' href='#'>
+              Health
+            </a>
+            <a className='overlay-link' href='#'>
+              Entertainment
+            </a>
+          </div>
+          <div className='overlay-footer'>&copy; 2024 FNN</div>
+        </div>
+      </>
+    );
+  }
 
   if (screenSize.width <= 992) {
     // Small
@@ -14,7 +66,8 @@ const Navigation = () => {
         <FaBars
           className='nav-burger'
           onClick={() => {
-            console.log('BURGER');
+            setOverlayMenu(!overlayMenu);
+            console.log('BURGER', overlayMenu);
           }}
         />
         <img className='nav-logo' src={logo} alt='FNN News' />

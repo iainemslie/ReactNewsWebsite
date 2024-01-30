@@ -1,8 +1,8 @@
 import React from 'react';
 
-const MainCard = () => {
+const LargeImageCard = () => {
   return (
-    <div className='main-card'>
+    <div className='large-image-card'>
       <img
         src='https://images.pexels.com/photos/1267696/pexels-photo-1267696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         alt='two ladies laughing'
@@ -21,4 +21,4 @@ const MainCard = () => {
   );
 };
 
-export default MainCard;
+export default LargeImageCard;

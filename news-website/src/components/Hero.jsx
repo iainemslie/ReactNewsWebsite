@@ -1,9 +1,9 @@
-import MainCard from './MainCard';
+import LargeImageCard from './LargeImageCard';
 
 const Hero = () => {
   return (
     <div className='hero container'>
-      <MainCard />
+      <LargeImageCard />
     </div>
   );
 };
