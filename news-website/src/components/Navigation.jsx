@@ -17,6 +17,7 @@ const Navigation = ({ screenSize }) => {
               onClick={() => {
                 setOverlayMenu(!overlayMenu);
                 console.log('BURGER', overlayMenu);
+                document.body.style.over = 'hidden';
               }}
             />
             <img className='nav-logo' src={logo} alt='FNN News' />
