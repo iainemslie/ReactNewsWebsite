@@ -7,3 +7,5 @@ https://www.fontspace.com/ardyanatypes
 ```sh
 $ npx json-server db.json
 ```
+
+Hero-left and hero-right should be components themselves in which you specify the number of elements
