@@ -207,8 +207,12 @@
 
 .large-image-card:hover {
   cursor: pointer;
+}
+
+.large-image-card:hover > :nth-child(3) {
+  cursor: pointer;
   /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); */
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 .large-image-card img {
@@ -257,7 +261,9 @@
 
 .small-image-card:hover {
   cursor: pointer;
-  /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); */
+}
+
+.small-image-card:hover > :first-child > :nth-child(2) {
   text-decoration: underline;
 }
 
@@ -305,7 +311,9 @@
 
 .simple-card:hover {
   cursor: pointer;
-  /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); */
+}
+
+.simple-card:hover > :first-child {
   text-decoration: underline;
 }
 
@@ -352,10 +360,60 @@
 .footer {
   width: 100%;
   background-color: black;
-  height: 20vh;
+  height: 35vh;
   color: white;
   text-align: center;
   margin-top: 6rem;
+}
+
+.footer img {
+  margin-top: 2rem;
+  width: 6rem;
+  filter: invert(100%);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex: column;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: tomato;
+  text-decoration: none;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+  margin-top: 2rem;
+}
+
+.footer-social {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-social:hover {
+  color: tomato;
+}
+
+.footer-copyright {
+  color: #aaa;
+  margin-top: 2rem;
 }
 
 /* Media Queries */

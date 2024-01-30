@@ -3,7 +3,7 @@ import useScreenSize from './hooks/useScreenSize';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Section from './components/Section';
-import Footer from './components/Cards/Footer';
+import Footer from './components/Footer';
 
 function App() {
   const screenSize = useScreenSize();
@@ -26,7 +26,7 @@ function App() {
       <Navigation screenSize={screenSize} />
       <Hero screenSize={screenSize} articles={articles} />
       <Section />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
