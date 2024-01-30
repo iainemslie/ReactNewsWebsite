@@ -12,20 +12,18 @@ const Hero = ({ screenSize, articles }) => {
           <div className='hero-middle'>
             <LargeImageCard />
           </div>
-          <div className='hero-left'>
-            <SmallImageCard />
-            <SmallImageCard />
-            <SmallImageCard />
-            <SmallImageCard />
-          </div>
-          <div className='hero-right'>
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-          </div>
+          <HeroColumn
+            numberElements={4}
+            side='hero-left'
+            type='SmallImageCard'
+            heading='Top Stories'
+          />
+          <HeroColumn
+            numberElements={6}
+            side='hero-right'
+            type='SimpleCard'
+            heading='Trending'
+          />
         </div>
       </div>
     );
@@ -34,12 +32,12 @@ const Hero = ({ screenSize, articles }) => {
     return (
       <div className='container'>
         <div className='hero'>
-          <div className='hero-left'>
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-          </div>
+          <HeroColumn
+            numberElements={4}
+            side='hero-left'
+            type='SimpleCard'
+            heading='Trending'
+          />
           <div className='hero-middle'>
             <LargeImageCard />
           </div>
@@ -50,19 +48,21 @@ const Hero = ({ screenSize, articles }) => {
     return (
       <div className='container'>
         <div className='hero'>
-          <div className='hero-left'>
-            <SmallImageCard />
-            <SmallImageCard />
-          </div>
+          <HeroColumn
+            numberElements={2}
+            side='hero-left'
+            type='SmallImageCard'
+            heading='Top Stories'
+          />
           <div className='hero-middle'>
             <LargeImageCard />
           </div>
-          <div className='hero-right'>
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-          </div>
+          <HeroColumn
+            numberElements={4}
+            side='hero-right'
+            type='SimpleCard'
+            heading='Trending'
+          />
         </div>
       </div>
     );
@@ -70,20 +70,21 @@ const Hero = ({ screenSize, articles }) => {
     return (
       <div className='container'>
         <div className='hero'>
-          <div className='hero-left'>
-            <SmallImageCard />
-            <SmallImageCard />
-          </div>
+          <HeroColumn
+            numberElements={2}
+            side='hero-left'
+            type='SmallImageCard'
+            heading='Top Stories'
+          />
           <div className='hero-middle'>
             <LargeImageCard />
           </div>
-          <div className='hero-right'>
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-          </div>
+          <HeroColumn
+            numberElements={5}
+            side='hero-right'
+            type='SimpleCard'
+            heading='Trending'
+          />
         </div>
       </div>
     );
@@ -91,21 +92,21 @@ const Hero = ({ screenSize, articles }) => {
     return (
       <div className='container'>
         <div className='hero'>
-          <div className='hero-left'>
-            <SmallImageCard />
-            <SmallImageCard />
-            <SmallImageCard />
-          </div>
+          <HeroColumn
+            numberElements={3}
+            side='hero-left'
+            type='SmallImageCard'
+            heading='Top Stories'
+          />
           <div className='hero-middle'>
             <LargeImageCard />
           </div>
-          <div className='hero-right'>
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-          </div>
+          <HeroColumn
+            numberElements={5}
+            side='hero-right'
+            type='SimpleCard'
+            heading='Trending'
+          />
         </div>
       </div>
     );
@@ -117,20 +118,18 @@ const Hero = ({ screenSize, articles }) => {
           <HeroColumn
             numberElements={4}
             side='hero-left'
-            element={SmallImageCard}
+            type='SmallImageCard'
+            heading='Top Stories'
           />
           <div className='hero-middle'>
             <LargeImageCard />
           </div>
-          <div className='hero-right'>
-            {/* <div className='section-heading'>Top Stories</div> */}
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-            <SimpleCard />
-          </div>
+          <HeroColumn
+            numberElements={6}
+            side='hero-right'
+            type='SimpleCard'
+            heading='Trending'
+          />
         </div>
       </div>
     );

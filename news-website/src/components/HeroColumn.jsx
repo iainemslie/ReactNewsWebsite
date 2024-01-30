@@ -1,17 +1,29 @@
 import React from 'react';
 import SmallImageCard from './Cards/SmallImageCard';
+import SimpleCard from './Cards/SimpleCard';
 
-const HeroColumn = ({ numberElements, side }) => {
+const HeroColumn = ({ numberElements, side, type, heading }) => {
   const elementsArray = Array.from({ length: numberElements });
 
-  return (
-    <div className={side}>
-      {/* <div className='section-heading'>Trending</div> */}
-      {elementsArray.map((_, index) => (
-        <SmallImageCard key={index} />
-      ))}
-    </div>
-  );
+  if (type === 'SmallImageCard') {
+    return (
+      <div className={side}>
+        {/* <div className='section-heading'>{heading}</div> */}
+        {elementsArray.map((_, index) => (
+          <SmallImageCard key={index} />
+        ))}
+      </div>
+    );
+  } else if (type === 'SimpleCard') {
+    return (
+      <div className={side}>
+        {/* <div className='section-heading'>{heading}</div> */}
+        {elementsArray.map((_, index) => (
+          <SimpleCard key={index} />
+        ))}
+      </div>
+    );
+  }
 };
 
 export default HeroColumn;
