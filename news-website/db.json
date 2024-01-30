@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Top 10 Tips for Day Drinking The Right Way This Summer",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam excepturi nulla ducimus similique reiciendis minima non architecto quam exercitationem.",
+      "author": "Sally Struthers",
+      "category": "Entertainment",
+      "publishDate": "2024-01-29",
+      "modifyDate": "2024-01-29",
+      "views": 0,
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam excepturi nulla ducimus similique reiciendis minima non architecto quam exercitationem.",
+      "imageURL": "https://images.pexels.com/photos/1267696/pexels-photo-1267696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 2,
+      "title": "The Art of Juggling Cats: A Comprehensive Guide",
+      "description": "Ever wondered how to juggle cats without getting scratched? Dive into this purr-fect guide with expert tips and hilarious anecdotes.",
+      "author": "Whisker Whisperer",
+      "category": "Comedy",
+      "publishDate": "2024-02-05",
+      "modifyDate": "2024-02-05",
+      "views": 0,
+      "content": "Learn the fine art of cat juggling and unleash your inner circus performer. Warning: No actual cats were harmed in the making of this guide, just a few bruised egos.",
+      "imageURL": "https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 3,
+      "title": "The Secret Lives of Rubber Ducks: A Quacky Exposé",
+      "description": "Uncover the hidden world of rubber ducks and their mysterious activities. Are they planning a takeover of your bathtub? Find out in this quirk-filled exposé!",
+      "author": "Ducky Detective",
+      "category": "Humor",
+      "publishDate": "2024-02-10",
+      "modifyDate": "2024-02-10",
+      "views": 0,
+      "content": "From secret meetings to espionage in bubbles, our investigative reporter reveals the surprising double lives of rubber ducks. Grab your snorkel, it's about to get quackers!",
+      "imageURL": "https://images.pexels.com/photos/2133060/pexels-photo-2133060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 4,
+      "title": "How to Train Your Goldfish to Play Poker",
+      "description": "Tired of playing cards alone? Learn the art of teaching your goldfish to be a poker pro. Ante up and get ready for fin-tastic showdowns!",
+      "author": "Fin Master",
+      "category": "Comedy",
+      "publishDate": "2024-02-15",
+      "modifyDate": "2024-02-15",
+      "views": 0,
+      "content": "Unleash the aquatic card shark within your goldfish. This guide will have you and your fishy friend swimming in poker chips in no time. Just keep the water clean and the bets wild!",
+      "imageURL": "https://images.pexels.com/photos/4958618/pexels-photo-4958618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SmallImageCard = () => {
+const SmallImageCard = ({ article }) => {
   return (
     <div className='small-image-card'>
       <div className='small-card-left'>

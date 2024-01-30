@@ -2,8 +2,9 @@ import LargeImageCard from './LargeImageCard';
 import SimpleCard from './SimpleCard';
 import SmallImageCard from './SmallImageCard';
 
-const Hero = ({ screenSize }) => {
+const Hero = ({ screenSize, articles }) => {
   if (screenSize.width <= 992) {
+    // Mobile
     return (
       <div className='container'>
         <div className='hero'>
@@ -27,6 +28,7 @@ const Hero = ({ screenSize }) => {
       </div>
     );
   } else if (screenSize.width <= 1240) {
+    // Large
     return (
       <div className='container'>
         <div className='hero'>
@@ -43,6 +45,7 @@ const Hero = ({ screenSize }) => {
       </div>
     );
   } else {
+    // Extra Large
     return (
       <div className='container'>
         <div className='hero'>
