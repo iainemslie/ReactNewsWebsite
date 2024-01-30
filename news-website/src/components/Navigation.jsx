@@ -4,9 +4,7 @@ import { FaX } from 'react-icons/fa6';
 import logo from '../assets/logo.png';
 import useScreenSize from '../hooks/useScreenSize';
 
-const Navigation = () => {
-  const screenSize = useScreenSize();
-
+const Navigation = ({ screenSize }) => {
   const [overlayMenu, setOverlayMenu] = useState(false);
 
   if (overlayMenu) {
