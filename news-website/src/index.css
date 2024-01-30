@@ -194,7 +194,7 @@
   padding: 0rem 1rem;
   background-color: tomato;
   color: white;
-  width: 30%;
+  width: 50%;
 }
 
 /* Cards */
@@ -343,6 +343,10 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .section-heading {
+    display: none;
+  }
+
   .hero {
     display: grid;
     grid-template-columns: 1fr;

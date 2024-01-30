@@ -8,7 +8,7 @@ const HeroColumn = ({ numberElements, side, type, heading }) => {
   if (type === 'SmallImageCard') {
     return (
       <div className={side}>
-        {/* <div className='section-heading'>{heading}</div> */}
+        <div className='section-heading'>{heading}</div>
         {elementsArray.map((_, index) => (
           <SmallImageCard key={index} />
         ))}
@@ -17,7 +17,7 @@ const HeroColumn = ({ numberElements, side, type, heading }) => {
   } else if (type === 'SimpleCard') {
     return (
       <div className={side}>
-        {/* <div className='section-heading'>{heading}</div> */}
+        <div className='section-heading'>{heading}</div>
         {elementsArray.map((_, index) => (
           <SimpleCard key={index} />
         ))}
