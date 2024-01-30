@@ -1,4 +1,5 @@
 import LargeImageCard from './LargeImageCard';
+import SimpleCard from './SimpleCard';
 import SmallImageCard from './SmallImageCard';
 
 const Hero = () => {
@@ -10,17 +11,16 @@ const Hero = () => {
           <SmallImageCard />
           <SmallImageCard />
           <SmallImageCard />
-          <SmallImageCard />
         </div>
         <div className='hero-middle'>
           <LargeImageCard />
         </div>
         <div className='hero-right'>
-          <SmallImageCard />
-          <SmallImageCard />
-          <SmallImageCard />
-          <SmallImageCard />
-          <SmallImageCard />
+          <SimpleCard />
+          <SimpleCard />
+          <SimpleCard />
+          <SimpleCard />
+          <SimpleCard />
         </div>
       </div>
     </div>
