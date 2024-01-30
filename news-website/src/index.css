@@ -219,7 +219,7 @@
 }
 
 .large-image-card .card-title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
 }
@@ -396,12 +396,12 @@
 
 @media only screen and (max-width: 1200px) {
   .hero-left {
-    margin-top: 2rem;
+    margin-top: 1rem;
     /* row-gap: 1rem; */
   }
 
   .hero-right {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 }
 
