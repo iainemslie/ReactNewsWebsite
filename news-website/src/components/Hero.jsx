@@ -2,7 +2,11 @@ import LargeImageCard from './LargeImageCard';
 import SmallImageCard from './SmallImageCard';
 
 const Hero = () => {
-  return <div className='hero container'></div>;
+  return (
+    <div className='container'>
+      <div className='hero'></div>
+    </div>
+  );
 };
 
 export default Hero;
