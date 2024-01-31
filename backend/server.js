@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/articles', require('./routes/articleRoutes'));
 app.use('/api/authors', require('./routes/authorRoutes'));
+app.use('/api/categories', require('./routes/categoryRoutes'));
 // app.use('/api/users', require('./routes/userRoutes'));
 
 app.use(errorHandler);

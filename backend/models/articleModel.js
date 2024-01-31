@@ -10,11 +10,12 @@ const articleSchema = mongoose.Schema(
       type: String,
       required: ['true', 'Please add a description'],
     },
-    // category: {
-    //   type: mongoose.Schema.Types.ObjectId,
-    //   required: ['true', 'Please add a category id'],
-    // },
-    author: {
+    category: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      ref: 'Category',
+    },
+    authorId: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
       ref: 'Author',
