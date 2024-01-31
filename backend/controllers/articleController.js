@@ -18,7 +18,8 @@ const createArticle = asyncHandler(async (req, res) => {
   if (
     !req.body.title ||
     !req.body.description ||
-    !req.body.author ||
+    !req.body.categoryId ||
+    !req.body.authorId ||
     !req.body.content
   ) {
     res.status(400);
@@ -28,7 +29,8 @@ const createArticle = asyncHandler(async (req, res) => {
   const article = await Article.create({
     title: req.body.title,
     description: req.body.description,
-    author: req.body.author,
+    categoryId: req.body.categoryId,
+    authorId: req.body.authorId,
     content: req.body.content,
   });
 

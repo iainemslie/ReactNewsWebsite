@@ -10,7 +10,7 @@ const articleSchema = mongoose.Schema(
       type: String,
       required: ['true', 'Please add a description'],
     },
-    category: {
+    categoryId: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
       ref: 'Category',
