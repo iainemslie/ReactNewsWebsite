@@ -10,6 +10,9 @@ const articleSchema = mongoose.Schema(
       type: String,
       required: ['true', 'Please add a description'],
     },
+    // category: {
+    //   type: String,
+    // },
     author: {
       type: String,
       required: ['true', 'Please add an author'],
@@ -18,6 +21,12 @@ const articleSchema = mongoose.Schema(
       type: String,
       required: ['true', 'Please add a body'],
     },
+    // tags: {
+    //   type: [String],
+    // },
+    // views: {
+    //   type: Number,
+    // },
   },
   {
     timestamps: true,
