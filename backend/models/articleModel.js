@@ -11,11 +11,13 @@ const articleSchema = mongoose.Schema(
       required: ['true', 'Please add a description'],
     },
     // category: {
-    //   type: String,
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   required: ['true', 'Please add a category id'],
     // },
     author: {
-      type: String,
-      required: ['true', 'Please add an author'],
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      ref: 'Author',
     },
     content: {
       type: String,
