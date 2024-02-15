@@ -9,7 +9,7 @@ const LargeImageCard = () => {
       />
       <h4 className='card-category'>Entertainment</h4>
       <h2 className='card-title'>
-        Top 10 Tips for Day Drinking The Right Way This Summer
+        Top 10 Tips for Patio Season The Right Way This Summer
       </h2>
       <h5 className='card-author'>Sally Struthers | 2024-01-29</h5>
       <p className='card-description'>
